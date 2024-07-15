@@ -2,6 +2,7 @@ package main
 
 import (
 	"blockEmulator/build"
+	"fmt"
 	"runtime"
 
 	"github.com/spf13/pflag"
@@ -57,4 +58,6 @@ func main() {
 	} else {
 		build.BuildNewPbftNode(uint64(nodeID), uint64(nodeNum), uint64(shardID), uint64(shardNum), uint64(modID))
 	}
+
+	fmt.Print("hello,test")
 }
