@@ -87,6 +87,5 @@ func NewTransaction(sender, recipient string, value *big.Int, nonce uint64) *Tra
 	tx.RawTxHash = nil
 	tx.HasBroker = false
 	tx.SenderIsBroker = false
-
 	return tx
 }
